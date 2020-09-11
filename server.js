@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("./public"));
 
-const fitnessRoutes = require("./routes/fitness-routes");
+const fitnessRoutes = require("./routes/exercise-routes");
 app.use(fitnessRoutes);
 
 const publicRoutes = require("./routes/public-routes");
