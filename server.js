@@ -6,6 +6,7 @@ require("dotenv").config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("./public"));
 
 const fitnessRoutes = require("./routes/fitness-routes");
 app.use(fitnessRoutes);
